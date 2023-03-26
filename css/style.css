@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body{ 
+    background-color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+
+.card-footer a:hover .fa-heart {
+    color: red;
+}
+
+.card-footer a:hover .fa-comment {
+    color: green;
+}
+
+.card-footer a:hover .fa-share {
+    color: green;
+}
