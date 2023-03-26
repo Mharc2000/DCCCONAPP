@@ -90,6 +90,10 @@
     <!-- MainShit-->
     <main>
     <!-- POST CARD-->
+    <audio id="my-audio" autoplay hidden>
+        <source src="music/DCCHYM.mp3" type="audio/mpeg">
+    </audio>         
+
     <div class="container">
 
         <div class="card bg-dark mt-4">
@@ -120,7 +124,7 @@
 
 
         <?php
-            $query = "SELECT * FROM users ORDER BY id DESC";  
+            $query = "SELECT * FROM users ORDER BY id DESC LIMIT 10";  
             $result = mysqli_query($connect, $query);
             while($row = mysqli_fetch_array($result)):?>
 
@@ -208,8 +212,7 @@
 
 
     </div>
-
-
+      
     </main>
 
 
@@ -262,6 +265,13 @@
         </div>
         </div>
     </div>
+    
+    <script>
+    window.addEventListener("DOMContentLoaded", function() {
+    var audio = document.getElementById("my-audio");
+    audio.play();
+    });
+    </script>
 
     <script
     type="text/javascript"
